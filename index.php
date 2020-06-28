@@ -5,19 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+    .imgRedonda {
+        width:300px;
+        height:300px;
+        border-radius:150px;
+    }
+
+    footer .contenedor{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+
+    
+    }
+    .container{
+        background-color:#F08080;
+        
+    }
+    header .container{
+        background-color:#F08080;
+
+    }
+    </style>
+
 </head>
-<body class="bg-dark text-white">
+<body class=" bg-light text-while">
     <header>
-    <h1 class="text-center mt-5">Registro de usuarios</h1>
+        <div class="container"> 
+            <center>
+            <img src="imagenes/jimin.jpg" class='imgRedonda'/>
+            </center>
+            <h1 class="text-center mt-5">REGISTRO DE USUARIOS</h1>
+        </div>
     </header>
     <main>
     <div class="container" >
-    
             <div class="row justify-content-center">
                 <div class="col-4 ">
                 <div class="d-flex justify-content-center">
-					
+					<br>	<br>
 				</div>
                     <form action="agregarDatos.php" method="POST">
                         <div class="form-group">
@@ -67,6 +95,14 @@
                             <button type="submit" class="btn btn-primary btn-block" id="btnBuscar" name="btnBuscar" >Buscar</button>                        
                     </form>
 
+                    <form action="ActualizarDatos.php" method="POST" class="mt-5 mb-5">
+                        <div class="form-group">
+                            <label for="ActualizarDatos"> Actualizar Correo</label>
+                            <input type="email" class="form-control " id="ActualizarDatos" name="ActualizarDatos" >                           
+                        </div>                                               
+                        <button type="submit" class="btn btn-primary btn-block" id="btnEnviar" name="btnActualizar" >Actualizar</button>
+                    </form>
+
                     <form action="EliminarDatos.php" method="POST" class="mt-5 mb-5">
                         <div class="form-group">
                             <label for="DocumentoEliminar"> Eliminar</label>
@@ -79,6 +115,10 @@
     </div>
     </main>
     <footer>
+        <div class="contenedor">
+                <p class="copy"> &Mery </p>       
+        </div>
+
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
